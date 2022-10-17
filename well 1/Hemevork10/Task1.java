@@ -16,11 +16,6 @@ public class Task1 {
             amounts = amounts + arr[i];
         }System.out.println  ( "Сумма трат за месяц составила  " +  amounts  + " рублей");
 
-
-
-
-
-
     }
 
 }

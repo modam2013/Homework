@@ -1,5 +1,4 @@
 package Hemevork10;
-
 public class Task3 {
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
@@ -12,12 +11,13 @@ public class Task3 {
 
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
-        float amounts=0f;
+        float amounts = 0f;
         float amountsAverage = 0f;
         for (int i = 0; i < arr.length; i++) {
             amounts = amounts + arr[i];
-            amountsAverage = amounts / arr.length;
+            amountsAverage = amounts /(float) arr.length;
         }
-        System.out.println  ( "Средняя сумма трат за месяц составила " +  amountsAverage  + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + amountsAverage + " рублей");
+
     }
 }
