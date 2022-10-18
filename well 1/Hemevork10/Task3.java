@@ -15,9 +15,8 @@ public class Task3 {
         float amountsAverage = 0f;
         for (int i = 0; i < arr.length; i++) {
             amounts = amounts + arr[i];
-            amountsAverage = amounts /(float) arr.length;
-        }
-        System.out.println("Средняя сумма трат за месяц составила " + amountsAverage + " рублей");
+            amountsAverage = amounts / (float) arr.length;
+        } System.out.println("Средняя сумма трат за месяц составила " + String.format("%.2f",amountsAverage) +  " рублей");
 
     }
 }

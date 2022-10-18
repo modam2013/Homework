@@ -19,8 +19,7 @@ public class Task2 {
                 max = arr[i];
             } if ( arr[i] < min ){
                 min = arr[i];
-            }
-        }
+            }}
         System.out.println( "Максимальная сумма трат за день составила  " + max + " рублей");
         System.out.println( "Минимальная сумма трат за день составила  " +  min + " рублей");
     }
