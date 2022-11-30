@@ -1,41 +1,117 @@
 package Homework15;
 
 public class Man {
+    private int yearOfBirth;
     String name;
-    String yearOfBirth;
-    int town;
+    private String town;
     String jobTitle;
 
-    Man(String name, String yearOfBirth, int town, String jobTitle) {
-        if (jobTitle!=null&&!jobTitle.isEmpty()&&!jobTitle.isBlank()){
-            this.jobTitle =jobTitle;
-        }else {
-            this.jobTitle=" Информация не указана при выводе в консоль.";
+    public void maxim() {
+        this.name = "Максим";
+        this.yearOfBirth = 1988;
+        this.town = "Минск";
+        this.jobTitle = "бренд-менеджер";
+
+        if (name == null || name.isEmpty() || name.isBlank()) {
+            name = ":Информация не указана:";
+        } else if (town == null || town.isEmpty() || town.isBlank()) {
+            town = ":Информация не указана:";
+        } else if (jobTitle == null || jobTitle.isEmpty() || jobTitle.isBlank()) {
+            jobTitle = ":Информация не указана:";
         }
-        if (name!=null&&!name.isEmpty()&&!name.isBlank()){
-            this.name =name;
-        }else {
-            this.name=" Информация не указана при выводе в консоль.";
+        System.out.println("Привет! Меня зовут " + name + ". Я из города " + town + ". Я родился в " +
+                yearOfBirth + " году. Я работаю на должности " + jobTitle + ". Будем знакомы!");
+    }
+    public void anna() {
+        this.name = "Аня";
+        this.yearOfBirth = 1993;
+        this.town = "Москва";
+        this.jobTitle = "методист образовательных программ";
+
+        if (name == null || name.isEmpty() || name.isBlank()) {
+            name = ":Информация не указана:";
+        } else if (town == null || town.isEmpty() || town.isBlank()) {
+            town = ":Информация не указана:";
+        } else if (jobTitle == null || jobTitle.isEmpty() || jobTitle.isBlank()) {
+            jobTitle = ":Информация не указана:";
         }
-        if (yearOfBirth!=null&&!yearOfBirth.isEmpty()&&!yearOfBirth.isBlank()){
-            this.yearOfBirth=yearOfBirth;
-        }else {
-            this.yearOfBirth=" Информация не указана при выводе в консоль.";
+        System.out.println("Привет! Меня зовут " + name + ". Я из города " + town + ". Я родился в " +
+                yearOfBirth + " году. Я работаю на должности " + jobTitle + ". Будем знакомы!");
+    }
+    public void kate() {
+        this.name = "Катя";
+        this.yearOfBirth = 1992;
+        this.town = "Калининград";
+        this.jobTitle = "продакт-менеджер";
+
+        if (name == null || name.isEmpty() || name.isBlank()) {
+            name = ":Информация не указана:";
+        } else if (town == null || town.isEmpty() || town.isBlank()) {
+            town = ":Информация не указана:";
+        } else if (jobTitle == null || jobTitle.isEmpty() || jobTitle.isBlank()) {
+            jobTitle = ":Информация не указана:";
         }
-           if (town >= 0) {
-                this.town = town;
-            } else {
-                this.town = Math.abs(town);
-            }
-    }public void hello(){
-        System.out.print("Привет! Меня зовут " + name);
-        System.out.print("Я из города " + yearOfBirth);
-        System.out.print(" Я родился в " + town + " году.");
-        System.out.print("Я работаю на должности " + jobTitle + " Будем знакомы!");
-        System.out.println("");}
+        System.out.println("Привет! Меня зовут " + name + ". Я из города " + town + ". Я родился в " +
+                yearOfBirth + " году. Я работаю на должности " + jobTitle + ". Будем знакомы!");
+    }
+    public void artem() {
+        this.name = "Артем";
+        this.yearOfBirth = 1995;
+        this.town = "Москва";
+        this.jobTitle = "директор по развитию бизнеса";
+
+        if (name == null || name.isEmpty() || name.isBlank()) {
+            name = ":Информация не указана:";
+        } else if (town == null || town.isEmpty() || town.isBlank()) {
+            town = ":Информация не указана:";
+        } else if (jobTitle == null || jobTitle.isEmpty() || jobTitle.isBlank()) {
+            jobTitle = ":Информация не указана:";
+        }
+        System.out.println("Привет! Меня зовут " + name + ". Я из города " + town + ". Я родился в " +
+                yearOfBirth + " году. Я работаю на должности " + jobTitle + ". Будем знакомы!");
+    }
+
+    public void vladimir() {
+        this.name = "Владимир";
+        this.yearOfBirth = 2001;
+        this.town = "Казань";
+        this.jobTitle = null;
+
+        if (name == null || name.isEmpty() || name.isBlank()) {
+            name = ":Информация не указана:";
+        } else if (town == null || town.isEmpty() || town.isBlank()) {
+            town = ":Информация не указана:";
+        } else if (jobTitle == null || jobTitle.isEmpty() || jobTitle.isBlank()) {
+            jobTitle = ":Информация не указана:";
+        }
+        System.out.println("Привет! Меня зовут " + name + ". Я из города " + town + ". Я родился в " +
+                yearOfBirth + " году. Я работаю на должности " + jobTitle + ". Будем знакомы!");
+    }
+
+    public int getYearOfBirth() {
+        return yearOfBirth;
+    }
+
+    public void setYearOfBirth(int yearOfBirth) {
+        if (yearOfBirth <= 0) {
+            yearOfBirth = 0;
+        }
+        this.yearOfBirth = yearOfBirth;
+    }
+
+    public String getTown() {
+        return town;
+    }
+
+    public void setTown(String town) {
+        if (town != null && !town.isEmpty() && !town.isBlank()){
+            this.town = town;
+        } else {
+            this.town = ":Информация не указана:";
+        }
+    }
 
 }
-
 
 
 
